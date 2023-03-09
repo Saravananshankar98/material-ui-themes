@@ -4,11 +4,10 @@ import Typography from "@mui/material/Typography";
 function LoginPage() {
   return (
     <>
-      <Paper>
+      {/* <Paper> */}
         <Box
           sx={{
             display: "-ms-grid",
-            zIndex: "tooltip",
             mx: "auto",
             height: "500px",
 
@@ -66,7 +65,7 @@ function LoginPage() {
             </Button>
           </Box>
         </Box>
-      </Paper>
+      {/* </Paper> */}
     </>
   );
 }

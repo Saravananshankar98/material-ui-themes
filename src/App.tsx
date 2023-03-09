@@ -1,11 +1,8 @@
-import {
-  Box,
-  CssBaseline, ThemeProvider
-} from "@mui/material";
-import React, { useState } from "react";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+import { useState } from "react";
 import "./App.css";
 import ActiveCustomTheme from "./components/active-custom-theme";
-import LoginPage from "./pages/login-page";
+import Dashboard from "./pages/dashboard";
 import { customizedTheme, defaultTheme } from "./theme";
 
 function App() {
@@ -19,13 +16,12 @@ function App() {
     <div className="App">
       <ThemeProvider theme={!selectTheme ? defaultTheme : customizedTheme}>
         <CssBaseline />
-        <Box sx={{height:"100vh"}}>
-        <ActiveCustomTheme
-          selectTheme={selectTheme}
-          handleChangeValue={handleChangeValue}
-        />
-        <LoginPage />
-{/* <DashBoard/> */}
+        <Box sx={{ height: "100vh" }}>
+          <ActiveCustomTheme
+            selectTheme={selectTheme}
+            handleChangeValue={handleChangeValue}
+          />
+          <Dashboard />
         </Box>
       </ThemeProvider>
     </div>

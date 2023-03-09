@@ -55,7 +55,6 @@ export const defaultTheme = createTheme({
         root: {
           "&.login-page": {
             display: "-ms-grid",
-            zIndex: "tooltip",
             mx: "auto",
             height: "500px",
             backgroundColor: "white",
@@ -79,25 +78,29 @@ export const customizedTheme = createTheme({
   },
   typography: {
     fontSize: 12,
-    fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
+    fontFamily: `Droid Serif`,
     h1: {
       fontSize: "35px",
     },
     h2: {},
+    h3:{},
     h4: {
       fontSize: 15,
-      fontStyle: "italic",
     },
     h5: {},
     h6: {},
     body1: {
       fontWeight: 300,
-      fontStyle: "italic",
     },
     body2: {
       fontSize: "16px",
-      fontStyle: "italic",
     },
+    subtitle1:{
+
+    },
+    subtitle2:{
+
+    }
   },
   components: {
     MuiButton: {
